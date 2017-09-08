@@ -1,0 +1,47 @@
+<idea-plugin>
+  <id>com.peng.myproguard</id>
+  <name>myproguard</name>
+  <version>1.0</version>
+  <vendor email="androidaccount@126.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+  <description><![CDATA[
+      这个是我的Android混淆插件<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <applicationService
+            serviceImplementation="com.peng.proguard.Setting"
+            serviceInterface="com.peng.proguard.Setting"
+    />
+  </extensions>
+
+  <actions>
+    <group id="Proguard.Main" popup="true" text="_Proguard">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action id="Proguard.Generate" class="com.peng.proguard.ProguardGenerate" text="获取混淆规则" description="MyProguard">
+        <keyboard-shortcut keymap="$default" first-keystroke="alt D"/>
+      </action>
+
+      <action id="Proguard.Setting" class="com.peng.proguard.ProguardSetting" text="设置混淆规则来源" description="MyProguard">
+      </action>
+    </group>
+  </actions>
+
+</idea-plugin>
