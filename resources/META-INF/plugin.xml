@@ -1,16 +1,17 @@
 <idea-plugin>
   <id>com.peng.myproguard</id>
-  <name>myproguard</name>
+  <name>AndroidProguard</name>
   <version>1.0</version>
-  <vendor email="androidaccount@126.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="androidaccount@126.com" url="https://github.com/pengyuantao/AndroidProguard">Android兴趣组</vendor>
 
   <description><![CDATA[
-      这个是我的Android混淆插件<br>
+      https://github.com/pengyuantao/AndroidProguard
+      一键添加Android代码混淆规则<br>
       <em>most HTML tags may be used</em>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
+      1.0版本.<br>
       <em>most HTML tags may be used</em>
     ]]>
   </change-notes>

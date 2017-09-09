@@ -27,6 +27,7 @@ public class ProguardGenerate extends AnAction {
             urlConnection.setRequestProperty("Accept-Charset", "UTF-8");
             urlConnection.setDoOutput(true);
             urlConnection.setDoInput(true);
+            urlConnection.setReadTimeout(5000);
             int responseCode = urlConnection.getResponseCode();
             if (responseCode == 200) {
                 String contentEncoding = urlConnection.getContentEncoding();
