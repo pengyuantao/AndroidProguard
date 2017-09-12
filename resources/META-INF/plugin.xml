@@ -6,13 +6,13 @@
 
   <description><![CDATA[
       https://github.com/pengyuantao/AndroidProguard
-      一键添加Android代码混淆规则<br>
-      <em>most HTML tags may be used</em>
+      To add Android Proguard with one key!
+      This is a plugin that collect all open source project proguard ,and insert proguard in your project.
+      You also can set proguard where from.
     ]]></description>
 
   <change-notes><![CDATA[
-      1.0版本.<br>
-      <em>most HTML tags may be used</em>
+      1.0<br
     ]]>
   </change-notes>
 
@@ -36,11 +36,11 @@
   <actions>
     <group id="Proguard.Main" popup="true" text="_Proguard">
       <add-to-group group-id="MainMenu" anchor="last"/>
-      <action id="Proguard.Generate" class="com.peng.proguard.ProguardGenerate" text="获取混淆规则" description="MyProguard">
+      <action id="Proguard.Generate" class="com.peng.proguard.ProguardGenerate" text="Get Android Proguard" description="MyProguard">
         <keyboard-shortcut keymap="$default" first-keystroke="alt D"/>
       </action>
 
-      <action id="Proguard.Setting" class="com.peng.proguard.ProguardSetting" text="设置混淆规则来源" description="MyProguard">
+      <action id="Proguard.Setting" class="com.peng.proguard.ProguardSetting" text="Set Proguard From" description="MyProguard">
       </action>
     </group>
   </actions>

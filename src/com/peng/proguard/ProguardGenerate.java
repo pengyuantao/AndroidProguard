@@ -39,14 +39,14 @@ public class ProguardGenerate extends AnAction {
                 }
                 StringSelection stringSelection = new StringSelection(resultBuilder.toString());
                 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, stringSelection);
-                Messages.showMessageDialog("Ctrl+V 粘贴混淆规则","成功",null);
+                Messages.showMessageDialog("Ctrl+V to copy it!","Succese",null);
             } else {
-                Messages.showErrorDialog("错误码:" + responseCode, "发生错误");
+                Messages.showErrorDialog("Code:" + responseCode, "Error");
                 return;
             }
         } catch (IOException e1) {
             e1.printStackTrace();
-            Messages.showErrorDialog(e1.getMessage(),"发生错误");
+            Messages.showErrorDialog(e1.getMessage(),"Error");
         } finally {
             if (bufferedReader != null) {
                 try {

@@ -14,7 +14,7 @@ public class ProguardSetting extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
-        Messages.showInputDialog("当前Proguard的地址:", "设置混淆获取地址", null, Setting.getInstance().getState(), new InputValidator() {
+        Messages.showInputDialog("Current Pruguad Url:", "Proguard From Url", null, Setting.getInstance().getState(), new InputValidator() {
             @Override
             public boolean checkInput(String s) {
                 System.out.println("checkInput:" + s);
